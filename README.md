@@ -59,10 +59,10 @@ Especificam opções adicionais que serão passadas ao linker durante a fase de 
 Para utilizar o `Makefile` basta adicioná-lo ao projeto em desenvolvimento e executar o comando:
 
 ```cmd
-make clean
+make
 ```
 
-Importa destacar que é necessário que esteja organizado de acordo com a estrutura definida acima.
+Importante destacar que é necessário que o projeto esteja organizado de acordo com a estrutura definida acima.
 
 ### Clean
 
