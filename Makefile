@@ -30,11 +30,11 @@ all: $(OBJECTS)
 
 # Rule for object binaries compilation
 $(BUILDDIR)/%.o: $(SRCDIR)/%.c
-	@ if [ ! -d ./$(BINDIR) ]; then mkdir -p $(BUILDDIR);fi
+	@ if [ ! -d ./$(BUILDDIR) ]; then mkdir -p $(BUILDDIR);fi
 	$(CC) -c $^ -o $@ $(CFLAGS) 
 
 
 # Clean BIN and BUILD dirs
 .PHONY: clean
 clean: 
-	rm -rf $(BUILDDIR) $(BINDIR)
+	rm -rf $(BUILDDIR) $(BINDIR) $(BINDIR)/$(BINARY)
